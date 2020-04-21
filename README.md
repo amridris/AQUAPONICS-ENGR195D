@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Aquaponics Water Testing - Engr195D
 
 Aquaponics is a popular aquaculture system in which waste produced by the fish in an aquarium are used to supply nutrients to a garden which in turn purifies the water returning to the aquarium. Our community partner, The Tech Interactive, has an aquaponics system consisting of a 50 gallon aquarium housing various freshwater fish connected to a vegetable garden growing various produce.
@@ -12,7 +12,7 @@ Our aim is to provide an affordable and easy to use solution to measure water qu
 # OVERVIEW
 
 Students at EPICS at SJSU are working to design an Arduino based water sampling and testing system for the aquaponics system on display at The Tech Interactive, a popular museum for children in downtown San Jose.
->>>>>>> 52e6dca4edf02239d6fa839b5c5caa71935e1f92
+
 
 ![alt text](https://github.com/junoroll/Aquaphonics-Engr195D-/blob/master/design%20pictures/AQUAPONICSNOBACK.png)
 
