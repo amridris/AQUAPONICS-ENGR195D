@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+#Ignore platformIO build files
+.pio/*
+
+#ignore vscode files 
+.vscode/*
+
+
