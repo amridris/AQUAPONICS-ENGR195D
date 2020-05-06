@@ -38,10 +38,21 @@ inline void readCalibratedColors(int high_constrain){
 
 /*
   Purpose: Measure the cuvette and return the estimated High range PH value
+  Parameters: void/None
 
+  Simply compare the color values and return the appropriate values. Unfortunately due to
+  covid-19 were not able to test it under the right conditions.
+
+  return : float PH value (6.0 - 7.6)
 */
-inline void highRangePH(){
-  
+inline float highRangePH(){
+
+  float ph_value = 0;
+
+  //if(yellow > green && yellow > blue && yellow > 450) ph_value = 6
+  //else if(yellow > green && yellow > blue & yellow < 450) ph_value = 6.4
+
+  return ph_value;
 }
 
 
