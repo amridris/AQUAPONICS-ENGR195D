@@ -1,8 +1,8 @@
 /*************************************************************************************
-  Aquaponics-ENGR195D class
+  Aquaponics-ENGR195D Spring 2020 class
 
-  Due to the COVID-19 the team were not able to fully test the code at the Tech Museum
-  , and thus resorted to documenting the details of our plan for the next team.
+  Due to COVID-19 the team were not able to fully test the code at the Tech Museum
+  ,and thus resorted to documenting the details of our plan for the next team.
  **************************************************************************************/
 
 #include <Wire.h>
