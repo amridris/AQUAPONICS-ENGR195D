@@ -1,18 +1,8 @@
 /***************************************************************************
-  This is a library for the Adafruit AS7262 6-Channel Visible Light Sensor
+  Aquaponics-ENGR195D class
 
-  This sketch reads the sensor
-
-  Designed specifically to work with the Adafruit AS7262 breakout
-  ----> http://www.adafruit.com/products/3779
-  
-  These sensors use I2C to communicate. The device's I2C address is 0x49
-  Adafruit invests time and resources providing this open source code,
-  please support Adafruit andopen-source hardware by purchasing products
-  from Adafruit!
-  
-  Written by Dean Miller for Adafruit Industries.
-  BSD license, all text above must be included in any redistribution
+  Due to the COVID-19 the team were not able to full test the code, and thus
+  resorted to documenting the details of our plan for the next team.
  ***************************************************************************/
 
 #include <Wire.h>
