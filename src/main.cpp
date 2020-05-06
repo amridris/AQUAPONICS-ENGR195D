@@ -1,9 +1,9 @@
-/***************************************************************************
+/*************************************************************************************
   Aquaponics-ENGR195D class
 
-  Due to the COVID-19 the team were not able to full test the code, and thus
-  resorted to documenting the details of our plan for the next team.
- ***************************************************************************/
+  Due to the COVID-19 the team were not able to fully test the code at the Tech Museum
+  , and thus resorted to documenting the details of our plan for the next team.
+ **************************************************************************************/
 
 #include <Wire.h>
 #include "Adafruit_AS726x.h"
