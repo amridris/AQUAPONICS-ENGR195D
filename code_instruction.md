@@ -17,7 +17,7 @@ The team has decided implement the Aquaponics code using **PlatformIO + VS Code*
 
 
 ## Changing the C++ version
-1. Open the platformio.ini file change the following line
+Open the platformio.ini file change the following line
 build_flags = -std=c++11 
 platformio supports c++98 to c++17
 

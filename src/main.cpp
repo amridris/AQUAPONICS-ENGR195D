@@ -22,6 +22,7 @@
 Adafruit_AS726x ams;
 int red, blue, green, yellow, orange, violet;
 
+// normalize and calibrate the color values to avoid extreme changes
 inline void readCalibratedColors(int high_constrain){
   red = ams.readRed();
   green = ams.readGreen();
@@ -53,8 +54,12 @@ void setup() {
   }
   ams.setIntegrationTime(254);
   ams.setGain(GAIN_64X);
-  //ams.drvOn();
+  
+
+  ams.drvOn(); // turns on LED if the enviroment is not well lit
 }
+
+
 
 void loop() {
 
@@ -71,7 +76,8 @@ void loop() {
   }
 
   readCalibratedColors(10000);
-  
+
+ // Debug code to check the values - Testing purpose 
   Serial.print("Temp: "); Serial.print(temp);
   Serial.print(" Violet: "); Serial.print(violet);
   Serial.print(" Blue: "); Serial.print(blue);
