@@ -8,7 +8,7 @@
 #include <Wire.h>
 #include "Adafruit_AS726x.h"
 
-//create the object
+//create the color module object and global int values
 Adafruit_AS726x ams;
 int red, blue, green, yellow, orange, violet;
 
@@ -43,7 +43,7 @@ inline void readCalibratedColors(int high_constrain){
   Simply compare the color values and return the appropriate values. Unfortunately due to
   covid-19 were not able to test it under the right conditions.
 
-  return : float PH value (6.0 - 7.6)
+  return : float PH value (6.0 - 7.6) reference the color card
 */
 inline float highRangePH(){
 
@@ -55,7 +55,26 @@ inline float highRangePH(){
   return ph_value;
 }
 
+/*
+  Purpose: Read nitrite value from a sample water test
+  Parameters: void/None
 
+  Use the 6 channel color value to determine the nitrite value in the sample
+  Needs more tweaking once tested on the aquaponics system
+
+  return : float nitrite value (0 ppm - 5.0 ppm) reference the color card
+*/
+
+inline float read_nitrite(){
+  float nitrite_value = 0;
+
+  if(blue > yellow && blue > violet) nitrite_value = 0;
+  else if(violet > green && violet > blue && red < blue) nitrite_value = 0.25;
+  else if(violet > blue && red > green) nitrite_value = 0.50;
+  // more test to be conducted below
+
+  return nitrite_value;
+}
 
 
 
