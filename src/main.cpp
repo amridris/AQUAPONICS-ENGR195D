@@ -12,7 +12,13 @@
 Adafruit_AS726x ams;
 int red, blue, green, yellow, orange, violet;
 
-// normalize and calibrate the color values to avoid extreme changes
+/*
+Purpose: normalize and calibrate the color values to avoid extreme changes
+parameter: high_constrain (used to specify the maximum constrain value)
+
+return: void
+
+*/
 inline void readCalibratedColors(int high_constrain){
   red = ams.readRed();
   green = ams.readGreen();
@@ -29,6 +35,18 @@ inline void readCalibratedColors(int high_constrain){
   violet = constrain(violet, 0, high_constrain);
   
 }
+
+/*
+  Purpose: Measure the cuvette and return the estimated High range PH value
+
+*/
+inline void highRangePH(){
+  
+}
+
+
+
+
 
 void setup() {
   Serial.begin(9600);
